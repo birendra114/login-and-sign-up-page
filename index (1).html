@@ -1,0 +1,43 @@
+<html>
+<head>
+<title> Login Form</title>
+ <link rel="stylesheet" href="design.css">
+ </head>
+  
+<body>
+  <div class="login-page">
+
+
+   <div class="form">
+        <form class="register-form" name="myform" method="post" onsubmit="return validateform()">
+        <input type="text" name="" placeholder=" Enter User Name">
+        <input type="email" name="" placeholder="Email Id">
+        <input type="password" name="" placeholder=" Password">
+   <button type="submit">Registered</button>
+   <p class="message">Already Registered? <a href="#">Login</a></p>
+   </form>
+   
+  
+   <form class="login-form">
+   <input type="text" name="" placeholder="User Name">
+   <input type="Password" name="" placeholder=" Password">
+   <button>SignIn</button>
+   <p class="message">Not Registered? <a href="#">Signup</a></p>
+   </form>
+   </div>
+   </div>
+   
+   <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+   
+   
+   <script>
+   $('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+   });
+   
+   </script>
+   
+   
+   
+</body>
+</html>
